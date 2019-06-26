@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <cube-button type="submit">Submit Button</cube-button>
+    <!-- <cube-button type="submit">Submit Button</cube-button> -->
     <router-view/>
   </div>
 </template>
