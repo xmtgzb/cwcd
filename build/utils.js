@@ -22,6 +22,14 @@ exports.cssLoaders = function (options) {
     }
   }
 
+  // px转换为rem
+  const px2remLoader = {
+    loader: 'px2rem-loader',
+        options: {
+            remUint: 75   //设计图的十分之一
+       }
+}
+
   const postcssLoader = {
     loader: 'postcss-loader',
     options: {
@@ -31,7 +39,7 @@ exports.cssLoaders = function (options) {
 
   // generate loader string to be used with extract text plugin
   function generateLoaders (loader, loaderOptions) {
-    const loaders = options.usePostCSS ? [cssLoader, postcssLoader] : [cssLoader]
+    const loaders = options.usePostCSS ? [cssLoader, postcssLoader,px2remLoader] : [cssLoader,px2remLoader]
 
     if (loader) {
       loaders.push({
