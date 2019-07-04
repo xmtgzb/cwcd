@@ -3,6 +3,7 @@
     <img src="./assets/logo.png">
     <!-- <cube-button type="submit">Submit Button</cube-button> -->
     <cube-button class="ss" type="submit">Submit Button</cube-button>
+     <el-button type="primary">主要按钮</el-button>
     <router-view/>
   </div>
 </template>
