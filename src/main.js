@@ -3,19 +3,23 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import Cube from 'cube-ui'        //适用于移动端
+import YDUI from 'vue-ydui';      //移动端
 import 'lib-flexible/flexible'   //px转换rem
+import 'vue-ydui/dist/ydui.rem.css';
 
-import ElementUI from 'element-ui';   //适用于PC端
-import 'element-ui/lib/theme-chalk/index.css';
 
-// import 'lib-flexible/flexible' //px转换rem
+// import Cube from 'cube-ui'        //移动端，
+// import ElementUI from 'element-ui';   //PC端
+// import 'element-ui/lib/theme-chalk/index.css';
+
+
 
 
 
 Vue.config.productionTip = false
-Vue.use(Cube)
-Vue.use(ElementUI)
+// Vue.use(Cube)
+// Vue.use(ElementUI)
+Vue.use(YDUI);
 
 /* eslint-disable no-new */
 new Vue({

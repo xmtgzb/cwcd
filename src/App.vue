@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <!-- <cube-button type="submit">Submit Button</cube-button> -->
-    <cube-button class="ss" type="submit">Submit Button</cube-button>
-     <el-button type="primary">主要按钮</el-button>
+       <yd-button type="primary">primary</yd-button>
+       
+
     <router-view/>
   </div>
 </template>
