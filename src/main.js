@@ -22,6 +22,7 @@ Vue.config.productionTip = false
 Vue.use(YDUI);
 
 /* eslint-disable no-new */
+
 new Vue({
   el: '#app',
   router,
