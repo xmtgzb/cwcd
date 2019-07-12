@@ -9,8 +9,8 @@ import router from './router'
 import 'lib-flexible/flexible'   //px转换rem
 
 //适用于PC端
-// import ElementUI from 'element-ui';   
-// import 'element-ui/lib/theme-chalk/index.css';
+import ElementUI from 'element-ui';   
+import 'element-ui/lib/theme-chalk/index.css';
 
 
 // 适用于移动端
@@ -19,7 +19,7 @@ import 'vue-ydui/dist/ydui.rem.css';
 
 Vue.config.productionTip = false
 
-// Vue.use(ElementUI)
+Vue.use(ElementUI)
 
 Vue.use(YDUI);
 
