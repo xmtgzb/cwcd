@@ -8,19 +8,17 @@ import router from './router'
 
 import 'lib-flexible/flexible'   //px转换rem
 
-// import ElementUI from 'element-ui';   //适用于PC端
+//适用于PC端
+// import ElementUI from 'element-ui';   
 // import 'element-ui/lib/theme-chalk/index.css';
 
-// import Cube from 'cube-ui'        //适用于移动端
 
-
+// 适用于移动端
 import YDUI from 'vue-ydui'; 
 import 'vue-ydui/dist/ydui.rem.css';
 
 Vue.config.productionTip = false
 
-
-// Vue.use(Cube)
 // Vue.use(ElementUI)
 
 Vue.use(YDUI);
