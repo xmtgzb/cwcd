@@ -2,8 +2,6 @@
   <div id="app">
     <img src="./assets/logo.png">
        <yd-button type="primary">primary</yd-button>
-       
-
     <router-view/>
   </div>
 </template>
