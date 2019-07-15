@@ -8,6 +8,7 @@ function importaAll(r) {
 const modulesCache = {}
 const modeles = importaAll(require.context('./modules/', true, /\.js$/))   //引进store中所有的仓库
 
+
 modeles.forEach(element => {
     Object.keys(element).forEach(key => {
 
@@ -18,6 +19,7 @@ modeles.forEach(element => {
         modulesCache[key] = element[key]
     })
 });
+
 
 Vue.use(Vuex);
 

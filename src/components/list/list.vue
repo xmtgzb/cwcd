@@ -5,11 +5,27 @@
 </template>
 
 <script>
+
 export default {
-  data() {
-    return {
-    };
+
+  created () {
+    let add = this.$store.state.add.one
+    console.log(add)
   },
+
+data() {
+
+    return {
+
+    };
+
+
+
+
+
+  },
+
+
 
 };
 </script>

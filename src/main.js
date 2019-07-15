@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import store from './store'//引入store
 
 
 import 'lib-flexible/flexible'   //px转换rem
@@ -27,6 +27,7 @@ Vue.use(YDUI);
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

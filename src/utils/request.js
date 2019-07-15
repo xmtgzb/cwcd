@@ -1,7 +1,7 @@
 // axios实例配置
 
 import axios from 'axios';
-import cookies from 'js-cookie';   //引入cooking文件
+import Cookies from 'js-cookie';   //引入cooking文件
 import { Loading, MessageBox } from 'element-ui';
 
 
