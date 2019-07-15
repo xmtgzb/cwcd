@@ -5,15 +5,22 @@ import list from '@/components/list/list'
 
 
 
-export default [
-    {
-        path: '',
-        component: {
-          sider:sider,
-          main: list
-        }
+export default[
+     {
+        path: '/',
+        components: {
+          asider: sider,
+          main:list
+        },
     },
-  
+
+
+
+    //   {
+    //     path: '/',
+    //     component:list
+    // },
 
 
 ]
+ 

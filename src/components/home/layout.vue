@@ -1,10 +1,21 @@
 <template>
-    <div>
-        <el-container class="layout">
-         <router-view />
+  <div>
+
+<el-container>
+  <el-header>Header</el-header>
+  <el-container>
+    <el-aside width="200px">
+       <router-view  name="asider" />
+
+    </el-aside>
+    <el-main>
+       <router-view name="main" />
+    </el-main>
   </el-container>
-    </div>
-  
+</el-container>
+
+
+  </div>
 </template>
 
 <script>
@@ -12,8 +23,8 @@ export default {
   data() {
     return {};
   },
-  beforeMount: {},
-  methods: {}
+
+
 };
 </script>
 
