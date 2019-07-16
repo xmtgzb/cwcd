@@ -8,15 +8,15 @@ import list1 from '@/components/list/list1'
 
 export default[
      {
-        path: '/',
+        path: '/two',
         components: {
           asider: sider,
-          main:list
+          // main:list
         },
     },
 
     {
-      path: '/two',
+      path: 'two/two1',
       components: {
         asider: sider,
         main:list1
@@ -25,21 +25,6 @@ export default[
 
 ]
 
-// export const add ={
-//   path: '/one',
-//   components: {
-//     asider: sider,
-//     main:list
-//   },
-// },
-
-// export const add ={
-//    path: '/two',
-//    components: {
-//      asider: sider,
-//      main:list1
-//    },
-// },
 
 
  

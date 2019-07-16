@@ -17,21 +17,6 @@ export default[
 
 ]
 
-// export const add ={
-//   path: '/one',
-//   components: {
-//     asider: sider,
-//     main:list
-//   },
-// },
-
-// export const add ={
-//    path: '/two',
-//    components: {
-//      asider: sider,
-//      main:list1
-//    },
-// },
 
 
  
