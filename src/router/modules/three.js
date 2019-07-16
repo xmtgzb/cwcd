@@ -6,17 +6,16 @@ import list2 from '@/components/list/list2'
 
 
 
-export default[
-     {
-        path: 'three',
-        components: {
-          asider: sider,
-          main:list2
-        },
+export default [
+  {
+    path: '/',
+    components: {
+      asider: sider,
+      main: list2
     },
+  },
 
 ]
 
 
 
- 

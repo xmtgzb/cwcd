@@ -24,9 +24,9 @@ function endLoading() {
 }
 
 const service = axios.create({
-  baseURL: 'http://xxxx.xxxxxxxxx.com/',    //请求的公共地址
-  timeout: 5000,                           // 请求超时时间
-  headers: { 'Content-Type': 'application/json; charset=UTF-8' }, //请求头
+  // baseURL: 'http://xxxx.xxxxxxxxx.com/',    //请求的公共地址
+  // timeout: 5000,                           // 请求超时时间
+  headers: { 'Content-Type': 'application/json; charset=UTF-8' }, 
   redirect: 'follow',
   mode: "cors",
   credentials: 'cors'
@@ -37,24 +37,24 @@ const service = axios.create({
 service.interceptors.request.use(config => {
 
   // 每次请求判断cook是否过期，针对需要登录的项目
-  let cookieflag = window.location.href.indexOf('login')   //判断是否为登录页
-  if (cookieflag == -1) {
-    let coohieinfo = Cookies.get('cookname')
-    if (coohieinfo == 'victory') {
-      Cookies.set('cookname', 'victory', { expires: 1 / 24 });
-    } else {
+  // let cookieflag = window.location.href.indexOf('login')   //判断是否为登录页
+  // if (cookieflag == -1) {
+  //   let coohieinfo = Cookies.get('cookname')
+  //   if (coohieinfo == 'victory') {
+  //     Cookies.set('cookname', 'victory', { expires: 1 / 24 });
+  //   } else {
 
-      MessageBox({
-        title: '温馨提示',
-        message: '登录信息过时，请重新登录',
-        center: true
+  //     MessageBox({
+  //       title: '温馨提示',
+  //       message: '登录信息过时，请重新登录',
+  //       center: true
 
-      }).then(() => {
-        window.location.href = window.location.origin + window.location.pathname + '#/login'
-      })
-      return
-    }
-  }
+  //     }).then(() => {
+  //       window.location.href = window.location.origin + window.location.pathname + '#/login'
+  //     })
+  //     return
+  //   }
+  // }
 
 
   startLoading()
@@ -77,6 +77,7 @@ service.interceptors.response.use(response => {
 
     })
   }
+  return response
 }, error => {
   endLoading()
   Promise.reject(error)
@@ -85,10 +86,10 @@ service.interceptors.response.use(response => {
 
 axios.interceptors.response.use(response => {
   return response
-},function(error){
-  if(error.response.data.status === 401 || error.response.data.status === 304){
+}, function (error) {
+  if (error.response.data.status === 401 || error.response.data.status === 304) {
     window.location = '/login'
-  }else {
+  } else {
     Promise.reject(error)
   }
 })

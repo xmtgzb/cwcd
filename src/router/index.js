@@ -42,17 +42,17 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    {
-      path: '/',
-      component: layout,
-      children:two
-    },
+    // {
+    //   path: '/',
+    //   component: layout,
+    //   children: two
+    // },
 
     {
       path: '/',
-      name:'layout',
+      name: 'layout',
       component: layout,
-      children:three
+      children: three
     }
 
   ]
