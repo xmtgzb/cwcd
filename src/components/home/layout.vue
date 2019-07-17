@@ -3,9 +3,9 @@
     <el-container>
       <el-header>Header</el-header>
       <el-container>
-        <el-aside >
+
           <router-view name="asider" />
-        </el-aside>
+
         <el-main>
           <router-view name="main" />
         </el-main>
