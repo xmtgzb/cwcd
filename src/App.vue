@@ -68,6 +68,8 @@ html {
 }
 
 
+
+
 #app {
   /* font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -77,6 +79,12 @@ html {
   margin-top: 60PX; */
   /* position: fixed; */
   height: 100%;
+
+  .el-main {
+    padding: 0;
+    margin-left: 310px;
+    margin-right: 10PX;
+  }
 
   /* 输入框样式 */
   .input {
