@@ -18,5 +18,10 @@ module.exports = {
     source: 'src',
     img: 'src',
     image: 'xlink:href'
-  }
+  },
+   //这里添加postcss的配置
+   postcss:[
+    require('postcss-import')(), // 添加@import支持
+    require('postcss-px2rem')({'remUnit':22,})
+  ]
 }

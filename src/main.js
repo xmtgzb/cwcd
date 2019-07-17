@@ -6,7 +6,7 @@ import router from './router'
 import store from './store'//引入store
 
 
-import 'lib-flexible/flexible'   //px转换rem
+// import 'lib-flexible/flexible'   //px转换rem
 
 //适用于PC端
 import ElementUI from 'element-ui';   
