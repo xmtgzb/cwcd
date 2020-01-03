@@ -24,7 +24,7 @@ function endLoading() {
 }
 
 const service = axios.create({
-  // baseURL: 'http://xxxx.xxxxxxxxx.com/',    //请求的公共地址
+  baseURL: process.env.BASE_URL,    //请求的公共地址
   // timeout: 5000,                           // 请求超时时间
   headers: { 'Content-Type': 'application/json; charset=UTF-8' }, 
   redirect: 'follow',
